@@ -5,12 +5,75 @@
 @import url('jquery.fancybox.css');
 @import url('jquery.bootstrap-touchspin.css');
 
-.menu-wrapper div.col-md-3{
-	background-color: #9ABAAE;
-	border: 4px solid #F7F0D2;
-	box-sizing: border-box;
+
+.more-options{
+	background-color: #e4002b;
+    border: 1px solid #e4002b;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 4px 4px;
+    border-radius: 200px;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    font-style: normal;
+    font-size: 14px;
+    cursor: pointer;
+	width: 80%;
+}
+
+.veg-food{
+	color: var(--bs-success);
+}
+
+.price{
+	color: #202124;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.non-veg-food{
+	color: var(--bs-danger);
+}
+
+html{
+	font-family: ubunturegular;
+}
+
+.logo{
+	position: fixed;
+    height: 150px;
+    width: 150px;
+}
+
+.hm-menu{
+	width: 88%;
+}
+
+.hm-menu-details{
+	width: 88%;
+}
+
+.hm-menu-container{
+    background: white;
 	border-radius: 10px;
-	color: #F7F0D2 !important;
+	box-shadow: 0 4px 7px rgb(0 0 0 / 30%);
+	box-sizing:border-box;
+}
+
+.menu-wrapper div.col-md-4{
+	background-color: white;
+    border: 4px solid white;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: start;
+    align-items: center;
+    text-align-last: left;
+    text-align: -webkit-center;
+	text-align: -moz-center;
 }
 
 
@@ -18,12 +81,9 @@
 	box-sizing: border-box;
     border-radius: 10px;
     font-family: ubunturegular;
-    border-top: 1px solid #862f2d;
-    color: #862f2d;
 }
 
 .menu-wrapper div.col-md-3 h4{
-	color: #F7F0D2 !important;
 	font-family: ubunturegular;
 }
 
@@ -33,8 +93,8 @@
 }
 
 .bg-green-dark {
-	background-color: #9ABAAE;
-	color: #F7F0D2 !important;
+	background-color: #e4002b;
+	color: white !important;
 }
 
 .bg-green-dark.card-title {
@@ -152,14 +212,14 @@ h4,
 h5,
 h6 {
 	margin-bottom: 0.5rem;
-	font-family: inherit;
+	font-family: ubunturegular;
 	font-weight: 500;
 	line-height: 1.1;
 	color: inherit;
 }
 
 .yellow-bg {
-	background-color: #F7F0D2;
+	background-color: white;
 }
 
 .font-ubuntu {
@@ -167,18 +227,18 @@ h6 {
 }
 
 .yellow-text-normal {
-	color: #EEE3B2 !important;
+	color: white !important;
 	font-size: 1.2rem;
 	font-family: ubunturegular;
 }
 
 .yellow-text-plain {
-	color: #EEE3B2 !important;
+	color: white !important;
 	font-family: ubunturegular;
 }
 
 .yellow-text {
-	color: #EEE3B2;
+	color: white;
 	font-family: Gooper;
 	font-weight: 300;
 	z-index: 12;
@@ -217,7 +277,10 @@ h6 {
 
 
 .carousel-caption {
-	bottom: 10rem !important;
+	bottom: 5rem !important;
+	padding: 0%;
+	background-color: #000;
+	display: none !important;
 }
 
 
@@ -286,7 +349,7 @@ h6 {
 	margin: 0px;
 	background: none;
 	line-height: 1.6em;
-	font-family: 'Poppins', sans-serif;
+	font-family: ubunturegular;
 }
 
 input,
@@ -492,6 +555,8 @@ text {
 	max-width: 1200px;
 	padding: 0px 15px;
 	margin: 0 auto;
+	text-align: -webkit-center;
+	text-align: -moz-center;
 }
 
 .auto-container1 {
@@ -826,7 +891,7 @@ img {
 	font-weight: 400;
 	margin-bottom: 20px;
 	line-height: 1.8em;
-	color: #EEE3B2;
+	color: white;
 }
 
 .list-style-two li .icon {
@@ -835,7 +900,7 @@ img {
 	top: 5px;
 	font-size: 20px;
 	line-height: 1em;
-	color: #EEE3B2;
+	color: white;
 }
 
 /*List Style Three*/
@@ -978,6 +1043,10 @@ img {
 	color: #99cc00;
 }
 
+.main-header{
+	background-color: #e4002b;
+}
+
 .main-header .main-box {
 	position: relative;
 	padding: 5px 5px;
@@ -993,11 +1062,11 @@ img {
 
 .main-header.fixed-header .main-box {
 	position: fixed;
-	height: 68px;
+	height: 72px;
 	/* border-bottom:1px solid #181818; */
 	padding: 0px 0px;
 	z-index: 999;
-	background-color: #862F2D;
+	background-color: #e4002b;
 	opacity: 1;
 	visibility: visible;
 	/* background-color:#212121; */
@@ -1047,7 +1116,8 @@ img {
 	-o-transition: all 300ms ease;
 	-moz-transition: all 300ms ease;
 	transition: all 300ms ease;
-	height: 68px;
+	height: 150px;
+    width: 150px;
 }
 
 .main-header .nav-toggler button {
@@ -2060,20 +2130,13 @@ img {
 }
 
 .offer-section h2 {
-	position: relative;
 	color: #13192d;
-	font-size: 40px;
 	text-align: center;
-	margin-bottom: 20px;
 }
 
 .offer-section h3 {
-	position: relative;
 	color: #13192d;
-	font-size: 18px;
-	font-weight: bold;
 	text-align: center;
-	margin-bottom: 20px;
 }
 
 /*Services Block Two*/
@@ -2873,7 +2936,7 @@ img {
 
 .main-footer {
 	position: relative;
-	background-color: #862f2d;
+	background-color: #e4002b;
 }
 
 .main-footer .footer-upper {
@@ -2888,7 +2951,7 @@ img {
 
 .main-footer .footer-widget h2 {
 	position: relative;
-	color: #EEE3B2;
+	color: white;
 	font-size: 24px;
 	font-weight: 700;
 	margin-bottom: 22px;
@@ -2905,7 +2968,7 @@ img {
 .main-footer .about-widget h3 {
 	position: relative;
 	font-size: 28px;
-	color: #EEE3B2;
+	color: white;
 	font-weight: 600;
 	line-height: 1.2em;
 }
@@ -2916,7 +2979,7 @@ img {
 	margin-top: 25px;
 	line-height: 1.8em;
 	margin-bottom: 20px;
-	color: #EEE3B2;
+	color: white;
 }
 
 /*Links Widget*/
@@ -2933,7 +2996,7 @@ img {
 .main-footer .links-widget .list li a {
 	position: relative;
 	font-size: 15px;
-	color: #EEE3B2;
+	color: white;
 	transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	-webkit-transition: all 0.3s ease;
@@ -2942,7 +3005,7 @@ img {
 }
 
 .main-footer .links-widget .list li a:hover {
-	color: rgba(255, 255, 255, 0.80);
+	color: white;
 }
 
 .main-footer .footer-bottom {
@@ -2953,7 +3016,7 @@ img {
 .main-footer .footer-bottom .copyright {
 	position: relative;
 	padding: 20px 0px;
-	color: #EEE3B2;
+	color: white;
 	font-size: 16px;
 	text-align: center;
 }
