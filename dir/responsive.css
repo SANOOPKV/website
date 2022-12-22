@@ -21,6 +21,13 @@
 }
 
 @media only screen and (max-width: 1140px){
+
+	.non-mobile-device{
+		display: none !important;
+	}
+	.mobile-device{
+		display:inherit !important;
+	}
 	
 	.main-header{
 		margin:0px !important;
@@ -62,7 +69,6 @@
 	.main-header,
 	.main-header.fixed-header .main-box{
 		position:relative;
-		background-color:#862F2D;
 	}
 	
 	.main-header.fixed-header .main-box{

@@ -5,6 +5,22 @@
 @import url('jquery.fancybox.css');
 @import url('jquery.bootstrap-touchspin.css');
 
+.non-mobile-device{
+	display: inherit;
+}
+.mobile-device{
+	display: none;
+}
+
+.logo-box-container{
+	position: absolute;
+    margin-left: 64%;
+    margin-top: -88px;
+}
+
+.card-body{
+	padding: 0px !important;
+}
 
 .more-options{
 	background-color: #e4002b;
@@ -840,7 +856,7 @@ img {
 	z-index: 100;
 	cursor: pointer;
 	border-radius: 50%;
-	background: #862f2d;
+	background: #e4002b;
 	display: none;
 	-webkit-transition: all 300ms ease;
 	-ms-transition: all 300ms ease;
